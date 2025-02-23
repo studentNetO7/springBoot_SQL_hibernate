@@ -2,7 +2,6 @@ package app.example.springBootHibernate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.IdClass;
 import javax.persistence.Column;
 
 @Entity

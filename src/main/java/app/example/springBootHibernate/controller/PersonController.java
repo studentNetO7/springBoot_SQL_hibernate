@@ -19,7 +19,6 @@ public class PersonController {
     }
 
     // Метод-обработчик GET-запроса с маппингом на /persons/by-city
-    // Параметр 'city' приходит через query params, например: ?city=Moscow
     @GetMapping("/persons/by-city")
     public List<Person> getPersonsByCity(@RequestParam String city) {
         // Передаем city в репозиторий для фильтрации
