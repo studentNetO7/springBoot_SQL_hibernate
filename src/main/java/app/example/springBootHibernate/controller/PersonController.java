@@ -42,6 +42,11 @@ public List<Person> getPersonsByCity(@RequestParam String city) {
     public Optional<Person> getPersonByNameAndSurname(@RequestParam String name, @RequestParam String surname) {
         return personRepository.findByNameAndSurname(name, surname);
     }
+    // Публичный эндпоинт, доступ к которому не требует авторизации
+    @GetMapping("/public")
+    public String publicEndpoint() {
+        return "This is a public endpoint, no authentication required!";
+    }
 }
 
 
